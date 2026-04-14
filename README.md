@@ -1,56 +1,51 @@
-# 🔱 Jormungandr — Data Pipeline Framework
+# jormungandr — Data Pipeline Framework. End-to-end data pipeline framework
 
-> **Norse Mythology**: World Serpent | End-to-end data pipeline framework
+*Jörmungandr — the world serpent of Norse myth.*
 
-[![GitHub Pages](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-blue?style=for-the-badge)](https://MukundaKatta.github.io/jormungandr/)
-[![GitHub](https://img.shields.io/github/license/MukundaKatta/jormungandr?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/MukundaKatta/jormungandr?style=flat-square)](https://github.com/MukundaKatta/jormungandr/stargazers)
+jormungandr takes its name in that spirit. Data Pipeline Framework. End-to-end data pipeline framework.
 
-## 🚀 Overview
+## Why jormungandr
 
-End-to-end data pipeline framework
+jormungandr exists to make this workflow practical. Data pipeline framework. end-to-end data pipeline framework. It favours a small, inspectable surface over sprawling configuration.
 
-**Tech Stack:** Python, Airflow
+## Features
 
-## 📦 Quick Start
+- `StageStatus` — exported from `src/jormungandr/core.py`
+- `StageResult` — exported from `src/jormungandr/core.py`
+- Included test suite
+
+## Tech Stack
+
+- **Runtime:** Python
+
+## How It Works
+
+The codebase is organised into `src/`, `tests/`. The primary entry points are `src/jormungandr/core.py`, `src/jormungandr/__init__.py`. `src/jormungandr/core.py` exposes `StageStatus`, `StageResult` — the core types that drive the behaviour.
+
+## Getting Started
 
 ```bash
-git clone https://github.com/MukundaKatta/jormungandr.git
-cd jormungandr
-# Follow setup instructions below
+pip install -e .
 ```
 
-## 🏗️ Project Structure
+## Usage
+
+```python
+from jormungandr.core import StageStatus
+
+instance = StageStatus()
+# See the source for the full API
+```
+
+## Project Structure
 
 ```
 jormungandr/
-├── README.md
-├── LICENSE
 ├── CLAUDE.md
-├── .gitignore
+├── LICENSE
+├── README.md
+├── index.html
+├── pyproject.toml
 ├── src/
-│   ├── main.py
-│   ├── config.py
-│   └── utils.py
 ├── tests/
-│   └── test_main.py
-├── docs/
-│   └── architecture.md
-├── examples/
-│   └── basic_usage.py
-└── .github/
-    └── workflows/
-        └── static.yml
 ```
-
-## 🌐 Live Demo
-
-Visit the landing page: **https://MukundaKatta.github.io/jormungandr/**
-
-## 📄 License
-
-MIT License — © 2026 Officethree Technologies
-
-## 🔱 Part of the Mythological Portfolio
-
-This is project **#jormungandr** in the [100-project Mythological Portfolio](https://github.com/MukundaKatta) by Officethree Technologies.
